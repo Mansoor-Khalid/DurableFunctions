@@ -10,7 +10,7 @@ FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 COPY --from=runtime7.0 /usr/share/dotnet/host /usr/share/dotnet/host
 COPY --from=runtime7.0 /usr/share/dotnet/shared /usr/share/dotnet/shared
 WORKDIR /src
-COPY ["DurableFunctions.csproj", "DurableFunctions/"]
+COPY ["DurableFunctions/DurableFunctions.csproj", "DurableFunctions/"]
 RUN dotnet restore "DurableFunctions/DurableFunctions.csproj"
 COPY . .
 WORKDIR "/src/DurableFunctions"
