@@ -9,11 +9,11 @@
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="Microsoft.Azure.DurableTask.AzureStorage" Version="1.13.3" />
-        <PackageReference Include="Microsoft.Azure.Functions.Worker" Version="1.10.0" />
+        <PackageReference Include="Microsoft.Azure.Functions.Worker" Version="1.11.0-preview2" />
         <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.DurableTask" Version="1.0.0-rc.1" />
         <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http" Version="3.0.13" />
         <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Storage" Version="5.0.1" />
-        <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="1.7.0" />
+        <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="1.8.0-preview2" />
         <PackageReference Include="Microsoft.Azure.DurableTask.Core" Version="2.12.1" />
         <PackageReference Include="Azure.Storage.Blobs" Version="12.14.1" />
         <PackageReference Include="HtmlTableHelper" Version="1.2.2" />
@@ -28,10 +28,5 @@
         <None Update="local.settings.json">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
-    </ItemGroup>
-    <ItemGroup>
-      <Reference Include="DurableTask.AzureStorage">
-        <HintPath>bin\Debug\net7.0\.azurefunctions\DurableTask.AzureStorage.dll</HintPath>
-      </Reference>
     </ItemGroup>
 </Project>
