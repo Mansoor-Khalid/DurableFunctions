@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  durablefunctions:
+    image: ${DOCKER_REGISTRY-}durablefunctions
+    build:
+      context: .
+      dockerfile: DurableFunctions/Dockerfile
