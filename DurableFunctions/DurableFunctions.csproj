@@ -2,7 +2,6 @@
     <PropertyGroup>
         <TargetFramework>net7.0</TargetFramework>
         <AzureFunctionsVersion>V4</AzureFunctionsVersion>
-        <OutputType>Exe</OutputType>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <DockerFastModeProjectMountDirectory>/home/site/wwwroot</DockerFastModeProjectMountDirectory>
