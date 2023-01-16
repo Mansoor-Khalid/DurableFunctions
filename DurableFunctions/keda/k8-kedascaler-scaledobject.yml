@@ -2,6 +2,7 @@ apiVersion: keda.sh/v1alpha1
 kind: ScaledObject
 metadata:
   name: azure-storage-queue-consumer
+  namespace: edgraph
 spec:
   scaleTargetRef:
     name:  durable-functions-deployment                 #  <--- Property name was changed
