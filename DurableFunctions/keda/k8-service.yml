@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: durable-functions-service
+spec:
+  selector:
+    app: durable-functions-pod
+
+  ports:
+  - port: 8080
+    targetPort: 80
+  type: LoadBalancer
+
